@@ -20,7 +20,7 @@ files.forEach((file)=> {
     }
   }
 })
-console.log(files)
+
 if(Object.keys(needLintProject).length) {
   Object.keys(needLintProject).forEach((p)=> {
     child_process.execSync('npx eslint --fix', {cwd: p})
