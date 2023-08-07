@@ -42,6 +42,9 @@
     "prepare": "husky install",
     "lint-staged": "npx lint-staged"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": "node ./scripts/lint.js"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
