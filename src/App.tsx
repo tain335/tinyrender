@@ -45,6 +45,7 @@ function App() {
       });
     }
   }, []);
+
   return (
     <div className="App" style={{ textAlign: 'center' }}>
       <canvas ref={canvasRef} id="canvas" style={{ width: 600, height: 600 }} />
